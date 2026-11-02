@@ -17,7 +17,7 @@
     <header>
         <h1>Anteneh Wondwosen</h1>
         <img src="images/profile.jpg" alt="Portrait of Anteneh Wondwosen smiling" title="Anteneh Wondwosen" width="200"
-            height="200">
+            height="270">
         <h2>Backend | Full Stack Software Engineer</h2>
         <nav>
             <a href="#about">About</a> |
@@ -27,6 +27,13 @@
             <a href="#contact">Contact</a> |
             <a href="projects.html">All Projects</a>
         </nav>
+        <button type="button" onclick="document.getElementById('hireDialog').showModal()">Hire me</button>
+        <dialog id="hireDialog">
+            <h2>Available for internships</h2>
+            <p>I am available for internships and freelance web projects from June 2027.</p>
+            <p><a href="#contact">Send me a message</a> or <a href="files/cv.pdf" download>download my CV</a>.</p>
+            <button type="button" onclick="document.getElementById('hireDialog').close()">Close</button>
+        </dialog>
     </header>
 
     <main>
@@ -127,6 +134,23 @@
                     </ul>
                 </li>
             </ul>
+            <h3>Skill Levels</h3>
+            <p>
+                <label for="lvl-html">HTML</label>
+                <meter id="lvl-html" value="0.8" min="0" max="1">80%</meter>
+            </p>
+            <p>
+                <label for="lvl-python">Python</label>
+                <meter id="lvl-python" value="0.7" min="0" max="1">70%</meter>
+            </p>
+            <p>
+                <label for="lvl-js">JavaScript</label>
+                <meter id="lvl-js" value="0.2" min="0" max="1" low="0.3" high="0.7" optimum="1">20%</meter>
+            </p>
+            <p>
+                <label for="lvl-ts">TypeScript</label>
+                <meter id="lvl-ts" value="0.85" min="0" max="1" low="0.4" high="0.8" optimum="1">85%</meter>
+            </p>
 
             <h3>My Learning Roadmap</h3>
             <ol type="1">
@@ -218,7 +242,10 @@
             <h2>Education</h2>
             <h3>BSc in Software Engineering</h3>
             <p>Addis Ababa Science and Technology University, 2023 – present</p>
-
+            <p>
+                <label for="degree">Degree progress:</label>
+                <progress id="degree" value="40" max="100">40%</progress> 40%
+            </p>
             <h3>Academic Record</h3>
             <table border="1" cellpadding="8" cellspacing="0">
                 <caption>Academic Record — BSc in Software Engineering</caption>
