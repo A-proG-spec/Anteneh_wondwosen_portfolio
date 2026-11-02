@@ -1,50 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anteneh Wondwosen - Projects</title>
+    <meta name="description" content="Projects built by Anteneh Wondwosen.">
+    <meta name="keywords" content="Anteneh Wondwosen, projects, portfolio, web development">
+    <meta name="author" content="Anteneh Wondwosen">
+    <title>Projects | Anteneh Wondwosen</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
+
 <body>
 
-    <h1>My Projects</h1>
-    
-    <p><a href="index.html">Back to Home</a></p>
+    <header>
+        <nav>
+            <p><a href="index.html">← Back to Home</a></p>
+        </nav>
+    </header>
 
-    <table border="1" cellpadding="5" cellspacing="10">
-        <caption><strong>Project Summary</strong></caption>
-        
-        <thead>
-            <tr>
-                <th>Project</th>
-                <th>Language</th>
-                <th>Year</th>
-                <th>Link</th>
-            </tr>
-        </thead>
-        
-        <tbody>
-            <tr>
-                <td>BloomCare E-commerce Platform</td>
-                <td>TypeScript, Node.js</td>
-                <td>2024</td>
-                <td><a href="index.html#projects">View Project</a></td>
-            </tr>
-            <tr>
-                <td>PointNova</td>
-                <td>Next.js, TypeScript</td>
-                <td>2025</td>
-                <td><a href="index.html#projects">View Project</a></td>
-            </tr>
-        </tbody>
-        
-        <tfoot>
-            <tr>
-                <td colspan="3"><strong>Total projects</strong></td>
-                <td><strong>2</strong></td>
-            </tr>
-        </tfoot>
-    </table>
+    <main>
+        <h1>My Projects</h1>
+        <p>Details of every project I have built. The summary table is below.</p>
+
+        <article id="bloomcare">
+            <h2>BloomCare E-commerce Platform</h2>
+            <img src="images/project 1.png"
+                 alt="Screenshot of BloomCare pharmacy e-commerce platform"
+                 width="600">
+            <p>
+                A pharmacy e-commerce platform built with TypeScript, Node.js, Express, and MongoDB.
+                It provides REST APIs for authentication, medicine, cart, orders, reviews, pharmacy
+                management, and administration.
+            </p>
+            <h3>How I built it</h3>
+            <ol>
+                <li>Designed the database schema for users, medicines, and orders.</li>
+                <li>Built REST APIs with Express and TypeScript.</li>
+                <li>Integrated Stripe for payments and Cloudinary for images.</li>
+                <li>Deployed the app on Render.</li>
+            </ol>
+            <h3>Technologies used</h3>
+            <ul>
+                <li>TypeScript</li>
+                <li>Node.js / Express</li>
+                <li>MongoDB</li>
+                <li>Stripe, Cloudinary, Render</li>
+            </ul>
+        </article>
+
+        <article id="pointnova">
+            <h2>PointNova</h2>
+            <p>
+                A Telegram Mini App built with Next.js, TypeScript, and MongoDB. It includes Telegram
+                authentication, session management, and backend APIs for app features.
+            </p>
+            <h3>How I built it</h3>
+            <ol>
+                <li>Set up the Next.js project and Telegram Mini App scaffolding.</li>
+                <li>Implemented Telegram authentication and session management.</li>
+                <li>Designed backend APIs and MongoDB schemas.</li>
+                <li>Tested the app inside Telegram.</li>
+            </ol>
+            <h3>Technologies used</h3>
+            <ul>
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>MongoDB</li>
+                <li>Telegram Bot API</li>
+            </ul>
+        </article>
+
+        <h2>Project Summary</h2>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <caption>Project Summary</caption>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Language</th>
+                    <th>Year</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BloomCare E-commerce Platform</td>
+                    <td>TypeScript, Node.js</td>
+                    <td>2024</td>
+                    <td><a href="#bloomcare">Details</a></td>
+                </tr>
+                <tr>
+                    <td>PointNova</td>
+                    <td>Next.js, TypeScript</td>
+                    <td>2025</td>
+                    <td><a href="#pointnova">Details</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">Total projects</th>
+                    <th>2</th>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer>
+        <p>Copyright 2026 Anteneh Wondwosen. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
