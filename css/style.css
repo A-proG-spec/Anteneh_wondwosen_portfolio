@@ -1,3 +1,6 @@
+/* ==========================================
+   Portfolio stylesheet — Abebe Kebede
+   ========================================== */
 
 /* Palette
    Primary #1f5fa8 (blue, same as the logo)
@@ -8,7 +11,7 @@
 
 
 html {
-  font-size: 16px;   
+  font-size: 16px;
 }
 
 body {
@@ -16,13 +19,18 @@ body {
   color: #22313f;
   font-family: 'Poppins', Arial, sans-serif;
   font-size: 1rem;
-  line-height: 1.6;    
+  line-height: 1.6;
 }
 
 
+h1, h2, h3 {
+  line-height: 1.2;
+  font-weight: 600;
+}
+
 h1 {
   color: #1f5fa8;
-  font-size: 2.5rem;   
+  font-size: 2.5rem;
   text-align: center;
   font-weight: 700;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -30,7 +38,7 @@ h1 {
 
 h2 {
   color: rgb(31, 95, 168);
-  font-size: 1.8rem;   
+  font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
@@ -38,24 +46,74 @@ h2 {
 
 h3 {
   color: hsl(212, 69%, 39%);
-  font-size: 1.2rem;  
+  font-size: 1.2rem;
 }
 
 
 mark {
-  background-color: rgba(245, 166, 35, 0.35);  
+  background-color: rgba(245, 166, 35, 0.35);
 }
 
 a {
   color: #1f5fa8;
-  text-decoration: none;   
+  text-decoration: none;
 }
 
 blockquote {
-  font-size: 1.2em;        
+  font-size: 1.2em;
   font-style: italic;
 }
 
 code, pre {
   font-family: 'Courier New', monospace;
+}
+
+
+.tagline {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #5a6b7d;
+  letter-spacing: 1px;
+}
+
+.btn {
+  background-color: #1f5fa8;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: #5a6b7d;
+}
+
+.card {
+  background-color: white;
+}
+
+/* ---------- Sections ---------- */
+
+#contact {
+  background-color: #e8eef6;
+}
+
+
+nav a {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.card > p {
+  color: #5a6b7d;
+}
+
+h2 + p {
+  font-size: 1.1rem;
+}
+
+legend ~ label {
+  font-weight: 600;
 }
